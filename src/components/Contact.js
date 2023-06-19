@@ -24,7 +24,7 @@ const Contact = () => {
                 pageState.content && pageState.title && (
                     <>
                         <h1>{pageState.title.rendered}</h1>
-                        <p dangerouslySetInnerHTML={{ __html: pageState.content.rendered }}>ddddddd</p>
+                        <p dangerouslySetInnerHTML={{ __html: pageState.content.rendered }}></p>
                     </>
                 )
             }
