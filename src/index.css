@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body, html {
+  background-color: rgb(56, 135, 181);
+  height: 102%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page > * {
+  display: block;
+}
+
+input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e6ffbe;
+  flex-grow: 1;
+  font-size: 1.1em;
+  height: 40px;
+  width: 100% !important;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e6ffbe;
+  font-size: 1.1em;
+  height: 200px;
+  width: 100% !important;
+}
+
+.submit {
+  background-color: #8ddb10;
+  border: 1px solid rgb(0, 85, 131);
+  border: none;
+  color:rgb(36, 36, 36);
+  font-size: 1.3em;
+  font-weight: 700;
+  height: 50px;
+  width: 150px !important;
+}
+
+.submit:hover {
+  background-color:rgb(5, 69, 95);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 50vh;
+}
+
+.headline {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    left: -40px;
+  padding: 1rem;
+}
+
+.navMenu {
+  display: flex;
+}
+
+.navMenu li {
+  padding: 0 1rem;
+  list-style-type: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navMenu li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 10px 15px 10px 15px;
+  margin-left: 20px;
+  transition: 0.7s ease;
+  text-decoration: none;
+}
+
+.navMenu li a:hover {
+  color: rgb(5, 69, 95);
+  border: 3px solid #8ddb10;
+}
+
+.profilePicture {
+  background-color: bisque;
+  background-image: url(images/profile-picture.jpg);
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  position: relative;
+    top: 100px;
+}
+
+.socialIconsPosition {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  margin: 180px 0 0 0;
+  height: 100px;
+  width: 180px;
+  position: relative;
+    top: 30px;
+}
+
+.linkedInSocialIcon {
+  z-index: 1;
+}
+
+.gitHubSocialIcon {
+  z-index: 1;
+}
+
+.frontpage {
+  background-color:rgba(18, 80, 120, 0.64);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+    top: 450px;
+  padding: 20px;
+  margin: 0 20px 50px 20px;
+  overflow: visible;
+  min-height: 400px;
+  max-width: 1000px;
+}
+
+.page {
+  background-color:rgba(18, 80, 120, 0.64);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+    top: 150px;
+  padding: 20px;
+  margin-bottom: 50px;
+  overflow: visible;
+  min-height: 400px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.post {
+  background-color:rgba(18, 80, 120, 0.64);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 50px;
+  overflow: visible;
+  min-height: 100px;
+  max-width: 1000px;
+}
+
+.postsWrapper ul {
+  list-style: none;
+}
+
+.postsWrapper {
+  /* border: 1px solid black; */
+  color:rgb(255, 255, 255);
+  padding: 20px;
+  max-width: 70%;
+}
+
+.post a {
+  color: #8ddb10;
+}
+
+section {
+  /* background-color: rgb(130, 184, 245); */
+  /* border: 1px solid orange; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  position: relative;
+    top: -250px;
+}
+
+.pageChild {
+  height: 100%;
+  max-width: 475px;
+}
+
+footer {
+  background-color:rgb(31, 31, 31);
+  color: white;
+  font-size: 1.2em;
+  height: 120px;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px 0 20px 0;
+  /* position: fixed;
+    bottom: 0; */
+  position: relative;
+    top: 91px;
+}
+
+footer li {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color:rgb(75, 170, 233);
+}
+
+footer p {
+  margin-left: 70px;
+  padding: 0 20px 0 20px;
+}

@@ -1,0 +1,113 @@
+@media screen and (max-width: 856px) {
+
+    input {
+        height: 30px;
+        /* width: 300px; */
+    }
+
+    textarea {
+        height: 200px;
+        /* min-width: 300px; */
+    }
+
+    .navMenu {
+        background-color: rgb(76, 159, 207);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+            top: -16px;
+            left: -100%;
+        z-index: 3;
+        transition: 0.3s;
+    }
+
+    .navMenu.active {
+        position: fixed;
+            left: 0;
+    }
+
+    .navMenu li {
+        padding: 1rem 0;
+        position: relative;
+            right: 50px;
+    }
+
+    .navMenu li a {
+        font-size: 2rem;
+    }
+
+    .hamburger {
+        display: initial;
+        position: absolute;
+            top: 25px;
+            left: 55px;
+        z-index: 3;
+    }
+
+    .socialIconsPosition {
+        margin: 80px 0 0 0;
+    }
+
+    .linkedInSocialIcon {
+        margin-bottom: 100px;
+        z-index: 1;
+    }
+
+    .gitHubSocialIcon {
+        margin-bottom: 100px;
+        z-index: 1;
+    }
+
+    .page {
+        overflow: hidden;
+    }
+
+    .postsWrapper {
+        position: relative;
+        height: 150vh;
+      }
+
+    .post {
+        padding: 20px;
+        overflow: visible;
+        width: 80%;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        width: 80%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 200px;
+    }
+
+    footer {
+        position: relative;
+            top: 200px;
+        /* position: fixed;
+            bottom: 0; */
+        margin-top: auto;
+        min-height: 170px;
+        z-index: 4;
+    }
+
+    footer li {
+        display: inline-block;
+        margin-left: 30px;
+        position: relative;
+            right: 30px;
+    }
+
+    footer p {
+        margin: 0 0 20px 0;
+        padding: 0 20px 0 20px;
+    }
+
+}
