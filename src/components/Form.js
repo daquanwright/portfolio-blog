@@ -10,13 +10,10 @@ const Form = () => {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        setData({name: '', email: '', message: ''})
-        console.log(data)
-    }
-
-    handleSubmit = (e) => {
         e.preventDefault();
+        setData({name: '', email: '', message: ''});
+        console.log(data);
+        
         fetch('http://localhost:3000/Send', {
             method: 'POST',
             body: JSON.stringify(data),
@@ -29,11 +26,12 @@ const Form = () => {
         ).then((response) => {
             if (response.status === 'Success') {
                 alert('Message Sent!');
+                setData({name: '', email: '', message: ''}); // Optionally reset the data here if the message was sent successfully
             } else if (response.status === 'Fail') {
                 alert('Message Failed To Send!');
             }
-        })
-    }
+        });
+    };
 
     return (
 
